@@ -1,0 +1,423 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+.row:after{
+	clear: both;
+}
+.row:before,.row:after{
+	content: " ";
+	display: flex;
+}
+.row{
+	margin: 0 -15px;
+}
+.container{
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0 auto;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+	padding: 0 15px;
+	float: left;
+}
+.col-1{
+	width: 8.3333%;
+}
+.col-2{
+	width: 16.6667%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.3333%;
+}
+.col-5{
+	width: 66.6667%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.3333%;
+}
+.col-8{
+	width: 66.6667%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.3333%;
+}
+.col-11{
+	width: 91.6667%;
+}
+.col-12{
+	width: 100%;
+}
+
+.header{
+	height: 80px;
+	/*box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);*/
+	/*margin-bottom: 40px;*/
+}
+li{list-style: none;}
+a{text-decoration: none;}
+
+img{
+	max-width: 100%;
+}
+
+.header ul{
+	text-align: right;
+	padding: 15px 0;
+}
+.header li{
+	display: inline-block;
+	padding: 10px 10px;
+	margin: 1px;
+	transition: all 1s;
+	cursor: pointer;
+	/*margin-left: 10px;*/
+	border: 2px dotted transparent;
+}
+.header li:hover{
+	/*background: #faa51b;*/
+	color: #fff;
+	border-radius: 5px;
+	border: 2px solid #faa51b;
+}
+.header li:hover a{
+	/*color: #fff;*/
+}
+.header li a{
+	color: #a1a9a0;
+}
+.header img{
+	width: 75px;
+	/*padding: 5px 0;*/
+}
+.slider{
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 40px;
+	height: 520px;
+}
+.slider ul{
+	width: 300%;
+}
+.slider li{
+	float: left;
+	display: inline-block;
+	width: 33.3333%;
+}
+.slider img{
+	height: 520px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.controller{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 20px;
+}
+.control{
+	display: inline-block;
+	margin-left: 4px;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 1s;
+}
+.control:hover{
+	background: #333;
+}
+.active{
+	background: #333 !important;
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+
+.mian h2{
+	margin-bottom: 20px;
+}
+.box-produk{
+	border: 3px solid #faa51b;
+	padding: 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	padding-bottom: 20px;
+	height: 320px;
+}
+.box-produk:hover{
+	/*border: 3px solid #ddd;*/
+	background: rgba(240, 233, 224, 0.4);
+	border-radius: 10px;
+	transition: all 1s;
+}
+.box-produk:hover .diskon{
+	border-top-left-radius: 8px;
+	transition: all 1s;
+}
+.box-produk:hover .t-price{
+	/*color: #faa51b;*/
+	transition: all 1s;
+	/*font-weight: bold;*/
+}
+.t-price{
+	margin-bottom: 40px;
+	font-size: 14px;
+	color: #333;
+}
+a.btn{
+	padding:6px 16px;
+	background: #faa51b;
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	left: 35%;
+	border-radius: 4px;
+}
+.diskon{
+	position: absolute;
+	left: -2px;
+	border-bottom-right-radius: 4px;
+	top: 0;
+	background: #faa51b;
+	color: #fff;
+	padding: 5px 10px;
+}
+.box-produk h3{
+	font-size: 1em;
+	margin-top: 25px;
+	font-weight: 500;
+}
+.box-produk img{
+	height: 130px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.col-side{
+	margin-bottom: 20px;
+	/*border-bottom: 1px solid #ddd;*/
+	border: 1px solid #ddd;
+	padding: 20px 10px;
+
+	border-radius: 4px;
+	padding-bottom: 10px;
+}
+.col-side:hover{
+	/*box-shadow: 0 0 4px rgba(0,0,0,0.4);*/
+}
+.col-side h3{
+	margin-bottom: 10px;
+}
+
+
+.keranjang{
+	line-height: 1.5;
+}
+
+.t-hed{
+	font-size: 14px;
+}
+.t-harga{
+	font-size: 14px;
+	color: #faa51b;
+}
+.keranjang hr{
+	border: 1px solid #ddd;
+}
+.t-jumlah{
+	font-size: 14px;
+}
+.keranjang img{
+	height: 80px;
+	margin: 0 auto;
+	object-fit: cover;
+}
+.pisahkan{
+	margin-top: 10px;
+	border-top: 1px solid #ddd;
+}
+.box-keranjang{
+	padding: 10px 0;
+	/*border-top: 1px solid #ddd;*/
+	font-size: 14px;
+	/*border-bottom: 1px solid #ddd;*/
+	margin-bottom: 20px;
+}
+.k-go{
+	padding: 30px 0;
+}
+.keranjang a{
+	padding:6px 16px;
+	background: #faa51b;
+	color: #fff;
+	bottom: 10px;
+	border-radius: 4px;
+}
+
+.keranjang .col-12 hr{
+	border-bottom: 1px dotted #333;
+	margin: 10px 0;
+	margin-bottom: 0;
+}
+
+.col-side li{
+	list-style-type: circle;
+}
+.kategori ul{
+	margin-left: 20px;
+}
+.kategori li a{
+	color: #333;
+}
+.kategori li a:hover{
+	color: #faa51b;
+	transition: all 1s;
+}
+.inform-side p{
+	margin-bottom: 10px;
+	line-height: 1;
+}
+.all{
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+}
+.all a{
+	padding: 8px 14px;
+	color: #a0a0a0;
+	border: 2px solid #faa51b;
+	border-radius: 4px;
+}
+.testimoni{
+	margin-top: 40px;
+	padding: 40px 0; 
+	background: url(../images/testimoni.jpg);
+	background-size: cover;
+	color: #faa51b;
+	text-align: center;
+}
+.testimoni h2{
+	margin-bottom: 20px;
+}
+.testimoni img{
+	height: 150px;
+	width: 150px;
+	border: 2px solid #faa51b;
+	object-fit: cover;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.t-job{
+	font-weight: bold;
+	/*color: #333;*/
+}
+
+.footer{
+	padding: 40px 0;
+	background: #faa51b;
+	color: #fff;
+}
+.footer a{
+	color: #fff;
+}
+.footer li{
+	border-bottom: 1px dotted #fff;
+}
+.footer ul{
+	margin-left: 20px;
+}
+.footer h3{
+	margin-bottom: 20px;
+}
+.copyright{
+	padding: 20px 0;
+	text-align: right;
+	background: #333;
+	font-size: 14px;
+	color: #fff;
+}
+
+.search{
+	background: #faa51b;
+	padding: 10px 0;
+	display: none;
+}
+
+.search input{
+	width: 100%;
+	padding: 10px 8px;
+	border: 0;
+}
+.search button{
+	/*width: 100%;*/
+	padding: 9px 18px;
+	border: 0;
+	color: #333;	
+}
+button{
+	cursor: pointer;
+}
+.out{
+	margin: 0 auto;
+}
+
+@media (max-width: 760px){
+	.mian{
+		width: 100%;
+	}
+	.sidebar{
+		width: 100%;
+	}
+	.testimoni .col-4{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.footer .col-3{
+		width: 100%;
+	}
+}
+@media (max-width: 320px){
+	.header .col-4,.header .col-8{
+		width: 100%;
+	}
+	.header .col-8 ul{
+		text-align: left;
+	}
+	.header li{
+		padding: 10px 3px;
+	}
+	.header{
+		height: 150px;
+	}
+	.slider{
+		height: 400px;
+	}
+	.search .col-10,.search .col-2{
+		width: 20%;
+	}
+	.search .col-10{
+		width: 80%;
+	}
+	.mian .col-3{
+		width: 100%;
+	}
+	.all{
+		margin-bottom: 40px;
+	}
+}
