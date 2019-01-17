@@ -26,7 +26,7 @@
 	<div class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-4"><img src="images/logo1.JPG" alt="logo"></div>
+				<div class="col-4"><img src="images/logo1.jpg" alt="logo" style="width: 50px"></div>
 				<div class="col-8">
 					<ul>
 						<li><a href="index.html">Home</a></li>
